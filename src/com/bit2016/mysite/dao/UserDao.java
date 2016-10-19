@@ -138,7 +138,7 @@ public class UserDao {
 			pstmt.setString(3, vo.getGender());
 			pstmt.setLong(4, vo.getNo());
 			
-			pstmt.executeQuery();
+			pstmt.executeUpdate();
 			
 		} catch (SQLException e) {
 			System.out.println("error : " + e);

@@ -6,6 +6,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 
 public class WebUtil {
+	
 	public static int checkIntParam(String s, int value) {
 		return (s != null && s.matches("\\d*\\.?\\d+"))? Integer.parseInt(s) : value;
 	}

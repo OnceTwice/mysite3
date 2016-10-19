@@ -5,7 +5,7 @@
 
 <div id="header">
 	<h1>
-		<a href="/mysite3">MySite</a>
+		<a href="${pageContext.request.contextPath }/main">MySite</a>
 	</h1>
 	<ul>
 	

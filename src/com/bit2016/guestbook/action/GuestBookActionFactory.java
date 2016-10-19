@@ -6,7 +6,6 @@ public class GuestBookActionFactory extends ActionFactory {
 
 	@Override
 	public Action getAction(String actionName) {
-		// TODO Auto-generated method stub
 		Action action = null;
 		
 		if("add".equals(actionName)) {

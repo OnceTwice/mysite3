@@ -5,29 +5,31 @@
 <div id="navigation">
 	<ul>
 		<c:choose>
+		
 			<c:when test="${param.menu == 'main' }">
-				<li class="selected"><a href="/mysite3/main">안대혁</a></li>
-				<li><a href="/mysite3/guestbook">방명록</a></li>
-				<li><a href="/mysite3/board">게시판</a></li>
+				<li class="selected"><a href="${pageContext.request.contextPath }/main"> 안대혁 </a></li>
+				<li><a href="${pageContext.request.contextPath }/guestbook"> 방명록 </a></li>
+				<li><a href="${pageContext.request.contextPath }/board"> 게시판 </a></li>
 			</c:when>
 			
 			<c:when test="${param.menu == 'guestbook' }">
-				<li class="selected"><a href="/mysite3/main">안대혁</a></li>
-				<li class="selected"><a href="/mysite3/guestbook">방명록</a></li>
-				<li><a href="/mysite3/board">게시판</a></li>
+				<li><a href="${pageContext.request.contextPath }/main">안대혁</a></li>
+				<li class="selected"> <a href="${pageContext.request.contextPath }/guestbook"> 방명록</a></li>
+				<li><a href="${pageContext.request.contextPath }/board">게시판</a></li>
 			</c:when>
 			
 			<c:when test="${param.menu == 'board' }">
-				<li><a href="/mysite3/main">안대혁</a></li>
-				<li><a href="/mysite3/guestbook">방명록</a></li>
-				<li class="selected"><a href="/mysite3/board">게시판</a></li>
+				<li><a href="${pageContext.request.contextPath }/main">안대혁</a></li>
+				<li><a href="${pageContext.request.contextPath }/guestbook">방명록</a></li>
+				<li class="selected"><a href="${pageContext.request.contextPath }/board">게시판</a></li>
 			</c:when>
 			
 			<c:otherwise>
-				<li><a href="/mysite3/main">안대혁</a></li>
-				<li><a href="/mysite3/guestbook">방명록</a></li>
-				<li><a href="/mysite3/board">게시판</a></li>
+				<li><a href="${pageContext.request.contextPath }/main">안대혁</a></li>
+				<li><a href="${pageContext.request.contextPath }/guestbook">방명록</a></li>
+				<li><a href="${pageContext.request.contextPath }/board">게시판</a></li>
 			</c:otherwise>
+			
 		</c:choose>
 	</ul>
 </div>

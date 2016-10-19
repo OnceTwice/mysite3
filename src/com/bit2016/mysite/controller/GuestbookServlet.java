@@ -1,4 +1,4 @@
-package com.bit2016.guestbook.controller;
+package com.bit2016.mysite.controller;
 
 import java.io.*;
 
@@ -9,19 +9,13 @@ import javax.servlet.http.*;
 import com.bit2016.guestbook.action.*;
 import com.bit2016.web.*;
 
-/**
- * Servlet implementation class GuestbookServlet
- */
 @WebServlet("/guestbook")
 public class GuestbookServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		// response.getWriter().append("Served at: ").append(request.getContextPath());
+		
 		request.setCharacterEncoding("utf-8");
 		
 		// action name 가져오기
@@ -82,9 +76,6 @@ public class GuestbookServlet extends HttpServlet {
 		*/
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);

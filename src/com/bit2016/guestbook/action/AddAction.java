@@ -14,7 +14,6 @@ public class AddAction implements Action {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		// add에 대한 요청 처리
 		String name = request.getParameter("name");
 		String password = request.getParameter("pass");

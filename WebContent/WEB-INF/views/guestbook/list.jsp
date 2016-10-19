@@ -7,7 +7,7 @@
 <head>
 	<title>mysite</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<link href="/mysite3/assets/css/guestbook.css" rel="stylesheet" type="text/css">
+	<link href="${pageContext.request.contextPath }/assets/css/guestbook.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div id="container">
@@ -17,7 +17,7 @@
 		<div id="content">
 			<div id="guestbook">
 			
-				<form action="/mysite3/guestbook?a=add" method="post">
+				<form action="${pageContext.request.contextPath }/guestbook?a=add" method="post">
 					<input type="hidden" name="a" value="insert">
 					<table>
 						<tr>
@@ -25,7 +25,7 @@
 							<td>비밀번호</td><td><input type="password" name="pass"></td>
 						</tr>
 						<tr>
-							<td colspan=4><textarea name="content" id="content"></textarea></td>
+							<td colspan=4><textarea name="content" id="content"></textarea></td>		<!-- 글내용 -->
 						</tr>
 						<tr>
 							<td colspan=4 align=right><input type="submit" VALUE=" 확인 "></td>
@@ -42,7 +42,7 @@
 								<td>${vo.no }</td>
 								<td>${vo.name }</td>
 								<td>${vo.date }</td>
-								<td><a href="/mysite3/guestbook?a=deleteform&no=${vo.no }">삭제</a></td>
+								<td><a href="${pageContext.request.contextPath }/guestbook?a=deleteform&no=${vo.no }">삭제</a></td>
 							</tr>
 							<tr>
 								<td colspan=4>${vo.content }</td>
