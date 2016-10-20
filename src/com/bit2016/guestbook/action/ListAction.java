@@ -6,8 +6,8 @@ import java.util.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 
-import com.bit2016.guestbook.dao.*;
-import com.bit2016.guestbook.vo.*;
+import com.bit2016.mysite.dao.*;
+import com.bit2016.mysite.vo.*;
 import com.bit2016.web.*;
 import com.bit2016.web.util.*;
 

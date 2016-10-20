@@ -1,9 +1,9 @@
-package com.bit2016.guestbook.dao;
+package com.bit2016.mysite.dao;
 
 import java.sql.*;
 import java.util.*;
 
-import com.bit2016.guestbook.vo.*;
+import com.bit2016.mysite.vo.*;
 
 public class GuestBookDao {
 	private Connection getConnection() throws SQLException {

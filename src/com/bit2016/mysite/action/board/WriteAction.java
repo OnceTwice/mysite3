@@ -14,10 +14,13 @@ public class WriteAction implements Action {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		// add에 대한 요청 처리
+		String title = request.getParameter("title");
+		String content = request.getParameter("content");
 		
 		BoardVo vo = new BoardVo();
-		
+		vo.setTitle(title);
+		vo.setContent(content);
 		
 		BoardDao dao = new BoardDao();
 		dao.insert(vo);

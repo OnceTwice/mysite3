@@ -17,7 +17,7 @@
 		<div id="content">
 			<div id="user">
 
-				<form id="join-form" name="joinForm" method="post" action="/mysite3/user">
+				<form id="join-form" name="joinForm" method="post" action="${pageContext.request.contextPath }/user">
 				
 					<input type="hidden" name="a" value="modify"/>
 					<input type="hidden" name="no" value="${userVo.no }"/>

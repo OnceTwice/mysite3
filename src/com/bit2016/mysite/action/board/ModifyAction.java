@@ -5,6 +5,8 @@ import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 
+import com.bit2016.mysite.dao.*;
+import com.bit2016.mysite.vo.*;
 import com.bit2016.web.*;
 import com.bit2016.web.util.*;
 
@@ -12,10 +14,18 @@ public class ModifyAction implements Action {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		// modify에 대한 요청 처리
+		String title = request.getParameter("title");
+		String content = request.getParameter("content");
 		
+		BoardVo vo = new BoardVo();
+		vo.setTitle(title);
+		vo.setContent(content);
 		
-		WebUtil.redirect(request, response, "/mysite3/board");	
+		BoardDao dao = new BoardDao();
+		dao.update(vo);
+		
+		WebUtil.redirect(request, response, "/mysite3/board");
 	}
 
 }

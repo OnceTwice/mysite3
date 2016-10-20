@@ -13,6 +13,7 @@ public class WriteFormAction implements Action {
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		WebUtil.redirect(request, response, "/WEB-INF/views/board/write.jsp");
+		// WebUtil.redirect(request, response, "/WEB-INF/views/board/write.jsp");
+		WebUtil.forward(request, response, "/WEB-INF/views/board/write.jsp");
 	}
 }
