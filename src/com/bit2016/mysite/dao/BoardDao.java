@@ -1,8 +1,8 @@
-package com.bit2016.board.dao;
+package com.bit2016.mysite.dao;
 
 import java.sql.*;
 
-import com.bit2016.board.vo.*;
+import com.bit2016.mysite.vo.*;
 
 public class BoardDao {
 	private Connection getConnection() throws SQLException {
@@ -21,8 +21,7 @@ public class BoardDao {
 		return conn;
 	}
 	
-	// write
-	public void insert(BoardVo vo) {
+	public void insert(BoardVo vo) {				// write
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		
@@ -53,8 +52,7 @@ public class BoardDao {
 		}
 	}
 	
-	// modify
-	public void update(BoardVo vo) {
+	public void update(BoardVo vo) {				// modify
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		

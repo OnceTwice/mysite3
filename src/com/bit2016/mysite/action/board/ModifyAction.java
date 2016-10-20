@@ -1,4 +1,4 @@
-package com.bit2016.board.action;
+package com.bit2016.mysite.action.board;
 
 import java.io.*;
 

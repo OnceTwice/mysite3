@@ -1,4 +1,4 @@
-package com.bit2016.board.vo;
+package com.bit2016.mysite.vo;
 
 public class BoardVo {
 	private Long no;

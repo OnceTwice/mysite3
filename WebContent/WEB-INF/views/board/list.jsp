@@ -90,13 +90,13 @@
 							<li><a href="">1</a></li>
 							<li><a href="">2</a></li>
 							<li class="selected">3</li>
-							<li>4</a></li>
-							<li>5</a></li>
+							<li><a>4</a></li>
+							<li><a>5</a></li>
 							<li><a href="">▶</a></li>
 						</ul>
 					</div>				
 					<div class="bottom">
-						<a href="${pageContext.request.contextPath }/board?a=write&no=${param.no }" id="new-book">글쓰기</a>		<!-- asdfasdfasdfasdf -->
+						<a href="${pageContext.request.contextPath }/board?a=writeform" id="new-book">글쓰기</a>
 					</div>
 				
 			</div>
