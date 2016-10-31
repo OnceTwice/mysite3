@@ -8,7 +8,7 @@ import com.bit2016.mysite.vo.*;
 public class BoardDaoTest {
 	public static void main(String[] args) {
 		// insertTest();
-		updateTest();
+		// updateTest();
 		getListTest();
 	}
 	

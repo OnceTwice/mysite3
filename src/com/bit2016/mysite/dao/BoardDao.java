@@ -143,13 +143,12 @@ public class BoardDao {
 			conn = getConnection();
 			stmt = conn.createStatement();
 			
-			String sql = "select rownum, no, title, hit, reg_date, name, users_no "
-					+ "from (select a.no, a.title, a.hit, to_char(reg_date, 'yyyy-mm-dd hh:mi:ss') "
-					+ "as reg_date, b.name, a.users_no from board a, users b where a.users_no=b.no"
-					+ " order by group_no desc, order_no asc) where (?-1)*?+1 <= rownum and rownum <= ?*?";
+			String sql = "select a.no, a.title, a.content, a.reg_date, a.hit, a.group_no, a.order_no, a.depth, a.users_no, b.name " +
+						"from board a, users b " +
+						"where a.no = b.no " +
+						"order by no";
 			
 			rs = stmt.executeQuery(sql);
-			
 			
 			while(rs.next()) {
 				Long no = rs.getLong(1);

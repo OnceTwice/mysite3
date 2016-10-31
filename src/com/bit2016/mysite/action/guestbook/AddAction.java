@@ -1,4 +1,4 @@
-package com.bit2016.guestbook.action;
+package com.bit2016.mysite.action.guestbook;
 
 import java.io.*;
 

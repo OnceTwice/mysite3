@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>mysite</title>
+	<title>mysite3</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<link href="${pageContext.request.contextPath }/assets/css/board.css" rel="stylesheet" type="text/css">
 </head>
@@ -16,6 +16,7 @@
 		
 		<div id="content">
 			<div id="board">
+			
 				<form id="search_form" action="${pageContext.request.contextPath }/board?a=search" method="get">
 					<input type="text" id="kwd" name="kwd" value="">
 					<input type="submit" value="찾기">
@@ -34,7 +35,7 @@
 					<c:forEach items="${list }" var="vo">
 						<tr>
 							<td>${vo.no }</td>			<!-- 번호 -->
-							<td class="left"> <a href="${pageContext.request.contextPath }/board?a=modifyform">${vo.title }</a> </td>	<!-- 제목 -->
+							<td class="left"> <a href="${pageContext.request.contextPath }/board?a=view&no=${vo.no }">${vo.title }</a> </td>	<!-- 제목 -->
 							<td>${vo.users_name }</td>	<!-- 글쓴이 -->
 							<td>${vo.hit }</td>			<!-- 조회수 -->
 							<td>${vo.reg_date }</td>	<!-- 작성일 -->

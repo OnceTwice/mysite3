@@ -6,7 +6,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.*;
 import javax.servlet.http.*;
 
-import com.bit2016.guestbook.action.*;
+import com.bit2016.mysite.action.guestbook.*;
 import com.bit2016.web.*;
 
 @WebServlet("/guestbook")
